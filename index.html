@@ -16,9 +16,11 @@
             <li><a href="#me-encontre"><p>Encontre-me</p></a></li>
         </ul>
     </header >
-    <div id="inicio"><section class="center">
-        <div class="center-cross">
-        <main>
+    <div id="inicio">
+
+        <section class="center">
+    <div class="center-cross">
+        <main class="justificar">
             <h1>Leandro Gomes</h1>
             <div class="space-10"></div>
             <p>Sou desenvolvedor Front-End</p>
@@ -27,15 +29,19 @@
         </main>    
         <nav>
             <img src="img/Perfil.png" alt="">
-        </nav></div>
-    </section></div>
+        </nav>
+    </div>
+    </section>
+</div>
+
     <div id="sobre">
         <div class="space-60"></div>
         <h2>Sobre mim</h2>
         <div class="space-60"></div>
+
         <div class="flex">
             
-            <div><img src="img/photo-perfil.png" alt=""></div>
+            <div class="photo-perfil"><img src="img/photo-perfil.png" alt=""></div>
             <div class="space-10"></div>
             <!-- Começo do quadro de infomações -->
             <nav class="shadow-inset">
@@ -63,7 +69,7 @@
 
                         <!-- Gráfico 2 -->
                         <div class="grafic">
-                            <div class="flex">
+                            <div class="flex" >
                             <p class="p-small">Outras Atividades</p>
                             <p class="p-small">80%</p></div>
                             <!-- Aqui tem um espaço de 5px -->
@@ -113,6 +119,7 @@
             </div>
         </div>
     </div>
+
     <div id="servico">
         <div class="space-60"></div>
         <h2>Serviços</h2> 
@@ -122,7 +129,7 @@
 
             <!-- Card 1 -->
             <div class="card green">
-                <img src="" alt="">
+                <div><img src="" alt=""></div>
                 <p class="weight">Performance de estudo</p>
                 <p class="p-small margin-p">
                     Atualmente, estou estudando profundamente React, JS e Design.</p>
@@ -141,7 +148,8 @@
             </div>
 
         </div>
-        <div class="justificar">
+
+        <div class="justificar-1">
             <div class="space-60"></div>
             <p >Você quer entrar em contato comigo? <a href="https://api.whatsapp.com/send?phone=5511974562181&text=Oi%20Leandro,%20" class="green" target="_blank">Clique aqui</a> para me chamar no Whatsapp!</p>
         </div>
@@ -153,36 +161,45 @@
         
         <div id="me-encontre">
             <h2>Encontre-me</h2>    
-            <div class="flex">
-                <nav class="get-in">
-                    <div class="space-20"></div>
-                    <h3>Vamos entrar em contato!</h3>
-                    <div class="space-20"></div>
-                    <p>Não gosta de formulários? Me manda um email!</p>
-                    <div class="space-10"></div>
-                    <li>Email: leandrogomesdeoliveira2@gmail.com</li>
-                    <div class="space-10"></div>
-                    <li>Localização: Brasil, São Paulo.</li>
-                </nav>
-                <nav class="form">
-                    <div class="flex">
-                    <input type="text" placeholder="Seu nome" class="shadow-inset">
-                    <div class="space-10"></div>
-                    <input type="email" name="" id="" placeholder="Email" class="shadow-inset">
-                    </div>
-                    <div>
-                        <input type="text" name="about" id="assu" placeholder="Assunto" class="shadow-inset">
-                    </div>
-                    <div>
+
+            <div class="grid-form">
+                <div class="flex ">
+                    <nav class="get-in">
+                        <div class="space-20"></div>
+                        <h3>Vamos entrar em contato!</h3>
+                        <div class="space-20"></div>
+                        <p>Não gosta de formulários? Me manda um email!</p>
                         <div class="space-10"></div>
-                        <textarea name="form" id="" cols="30" rows="10" placeholder="Mande sua mensagem!" class="shadow-inset"></textarea>
-                        <button>Contate-me</button>
-                    </div>
-                </nav>
+                        <li>Email: leandrogomesdeoliveira2@gmail.com</li>
+                        <div class="space-10"></div>
+                        <li>Localização: Brasil, São Paulo.</li>
+                    </nav>
+                    <div class="space-m"></div>
+                    <nav class="form">
+                        <!-- Nome e Email -->
+                        <div class="flex input-text">
+                        <input type="text" placeholder="Seu nome" class="shadow-inset">
+                        <div class="space-10"></div>
+                        <input type="email" name="" id="" placeholder="Email" class="shadow-inset">
+                        </div>
+                        <!-- assunto -->
+                        <div class="input-text">
+                            <input type="text" name="about" id="assu" placeholder="Assunto" class="shadow-inset">
+                        </div>
+                        <div class="space-10"></div>
+                        <!-- textarea e button -->
+                        <div class="input-text">
+                            <div ><textarea name="form" id="" cols="30" rows="10" placeholder="Mande sua mensagem!" class="shadow-inset"></textarea></div>
+                            <button>Contate-me</button>
+                        </div>
+                    </nav>
+                </div>
             </div>
+
         </div>
     </div>
-    <div class="justificar">
+    <div class="space-15"></div>
+    <div class="justificar-1">
         <footer>
             <p>© 2021 Leandro Gomes</p>
         </footer>

@@ -134,10 +134,11 @@ button:hover a {
     width: 100%;
     justify-content: space-around;
 }
-.justificar {
-    display: grid;
-    justify-content: center;
+.justificar-1 {
+    text-align: center;
+    
 }
+
 
 /* Formatação dos header */
 header {
@@ -396,4 +397,446 @@ textarea {
     outline: none;
 
     border-radius: 15px;
+}
+
+
+@media (max-width: 700px) {
+    * {
+        color: #474A51;
+        font-family: 'Roboto Mono', Arial;
+        font-size: 36px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    button, html {
+        padding: 0;
+        background-color: #FCFEFF;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        max-width: 100vw;
+        
+        height: 100vh;
+        display: grid;
+    }
+    html {
+        width: 100vw;
+        
+        display: grid;
+        justify-items: center;
+    
+        scroll-behavior: smooth;
+    }
+    
+    /* Formatação de fontes */
+    h1, h2 {
+        font-size: 1em;
+        font-weight: 500;
+    }
+    h3 {
+        font-size: 0.56em;
+    }
+    p, li, input, textarea {
+        font-size: 0.38em;
+        font-weight: 400;
+    }
+    .p-small {
+        font-size: 0.3em;
+    }
+    .margin-p {
+        margin: 10px;
+    }
+    .weight {
+        font-weight: 800;
+    }
+    button {
+        font-size: 0.30em;
+        font-weight: 600;
+    }
+    a {
+        text-decoration: none;
+    }
+    a.green {
+        font-size: 1em;
+        color: #128C7E;
+    }
+    a.bt {
+        font-size: 1em;
+    }
+    .shadow-inset {
+        box-shadow: inset 0 0 20px rgba(71, 74, 81, 0.25);
+    }
+    
+    /* Formatação de botões */
+    button {
+        background-color: #FCFEFF;
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+        border-style: none;
+        border: 1px solid #474A51;
+        color: #474A51;
+        margin: 0;
+        
+    }
+    button:hover {
+        background-color: #474A51;
+        color: #FCFEFF;
+        cursor: pointer;
+    
+        transition: 0.3s;
+        
+    }
+    button:hover a {
+        color: #FCFEFF;
+    }
+    
+    /* Espaçamento */
+    .space-5 {
+        padding: none;
+    }
+    .space-10 {
+        padding: 10px;
+    }
+    .space-15 {
+        padding: 15px;
+    }
+    .space-20 {
+        padding: 20px;
+    }
+    .space-30 {
+        padding: 30px;
+    }
+    .space-60 {
+        padding: 0;
+    }
+    .margin-30 {
+        margin: 30px;
+    }
+    
+    /* Formatação de páginas */
+    .flex {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .center {
+        display: grid;
+        align-items: center;
+    }
+    .center-cross {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 30%;
+        grid-template-areas: 'img' 'eu';
+        
+    }
+    .center-cross-around{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .justificar {
+        display: grid;
+        justify-items: center;
+        
+    }
+    div#flex-m {
+        display: flex;
+    }
+    
+    
+    
+    /* Formatação dos header */
+    header {
+        width: 100%;
+        height: 70px;
+        margin: auto;
+        position: fixed; 
+        top: 0;
+        background-color: #FCFEFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        display: none;
+    }
+    ul {
+        align-self: center;
+    }
+    ul li {
+        list-style: none;
+        margin-left: 50px;
+        height: 100%;
+        cursor: pointer;
+        
+    }
+    ul li:hover p {
+        color: blue;
+    }
+    
+    /* Height de páginas */
+    section {
+        height: 650px;
+        
+    }
+    #sobre {
+        height: 700px;
+        
+        margin: 20px;
+        display: grid;
+    }
+    #servico {
+        height: auto;
+        margin: 20px;
+        
+    }
+    #me-encontre {
+        height: auto;
+        margin: 20px;
+    }
+    footer {
+        
+        display: grid;
+        height: 100%;
+        height: 70px;
+        align-items: flex-end;
+        bottom: 0;
+        margin-bottom: 0;
+    }
+    
+    /* formatação do section */
+    section div main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        grid-area: eu;
+    }
+    section nav {
+        display: flex;
+        justify-content: center;
+    }
+    section img {
+        width: 300px;
+        grid-area: img;
+        
+    }
+    
+    /* Formatação sobre */
+    #sobre nav {
+        
+        width: 100%;
+    
+        
+        border-radius: 10px;
+    
+        display: flex;
+        
+    }
+    #sobre div.flex {
+        
+        
+    
+        width: 100%;
+        
+    }
+    #sobre .photo-perfil {
+        display: none;
+    }
+    
+    
+    #sobre nav button {
+        align-self: flex-end;
+        
+        
+    }
+    .SOP {
+        width: 100%;
+        
+        
+    
+    }
+    .hi {
+        width: 100%;
+        margin-bottom: 10px;
+        
+    
+    }
+    #sobre .flex.center-cross-around {
+        display: grid;
+        
+        margin-top: 20px;
+        margin-left: 20px ;
+        grid-template-columns: 1fr 1fr;
+        /* justify-items: center; */
+    }
+    
+    
+    #sobre div.space-10 {
+        display: none;
+    }
+    #sobre div.space-60 {
+        display: none;
+    }
+    .grafic {
+        padding: 10px;
+    }
+    
+    
+    div.SOP div.bar {
+        height: 7px;
+        width: 100%;
+        
+        border-radius: 5px;
+        border: solid 0.2px #474A51;
+    
+        background-color: #FCFEFF;
+    }
+    
+    /* Criação do gráfico */
+     .percent {
+        
+        height: 100%;
+    
+        border-radius: 5px;
+    
+    }
+    
+    
+    /* Cores do gráfico */
+    .color-green {
+        width: 95%;
+    
+        background-color: #474A51;
+  
+    }
+    .color-purple {
+        width: 80%;
+    
+        background-color: #474A51;
+   
+    }
+    .color-red {
+        width: 95%;
+    
+        background-color: #474A51;
+    
+    }
+    
+    
+    
+    /* Começo da etapa de serviço (cards) */
+    #servico .flex {
+        justify-items: center;
+    }
+    .card {
+        min-width: 200px;
+        width: 28%;
+        max-width: 302px;
+        min-height: 250px;
+        
+    
+        text-align: center;
+        padding-bottom: 20px;
+    
+        margin-bottom: 30px;
+    
+        border-radius: 15px;
+        display: grid;
+        justify-content: center;
+        transition: 0.7s;
+    
+        border: 1px solid #474A51;
+    }
+    .card:hover {
+        transition: 0.7s;
+        transform: translateY(-20px);
+    }
+    
+    .blue {
+        background-color: #474A51;
+        
+        
+    }
+    .blue p {
+        color: #FCFEFF;
+    }
+    #servico .flex.center-cross {
+        display: flex;
+        align-items: center;
+    }
+    #servico div.justificar p {
+        text-align: center;
+    }
+    
+    
+    /* Começo da etapa de me encontre */
+
+    #me-encontre div.flex {
+        
+        align-content: center;
+    }
+    .get-in {
+        width: 100%;
+    }
+    
+    
+    nav.form {
+        width: 100%;
+        margin: 0;
+        margin-top: 30px;
+
+        
+        
+    }
+    .form div.flex {
+        width: 100%;
+    
+        
+        
+    }
+    input {
+        width: 93%;
+        max-width: 300px;
+        height: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    
+        
+    
+        border: none;
+        outline: none;
+        border-radius: 15px;
+    }
+    input#assu {
+        width: 93%;
+    }
+    
+    textarea {
+        width: 93%;
+        max-width: 300px;
+        
+        padding-left: 10px;
+        padding-top: 15px;
+        padding-right: 10px;
+        margin-bottom: 0;
+    
+        
+    
+        border: none;
+        resize: none;
+        outline: none;
+    
+        border-radius: 15px;
+    }
+    .grid-form {
+        display: grid;
+        
+
+        justify-content: center;
+        
+    }
 }
