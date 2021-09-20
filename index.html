@@ -18,17 +18,17 @@
     </header >
     <div id="inicio">
 
-        <section class="center">
+        <section class="center bg-main">
     <div class="center-cross">
         <main class="justificar">
             <h1>Leandro Gomes</h1>
             <div class="space-10"></div>
-            <p>Sou desenvolvedor Front-End</p>
+            <p id="slideText">Sou desenvolvedor Front-End</p>
             <div class="space-10"></div>
             <button><a href="https://api.whatsapp.com/send?phone=5511974562181&text=Oi%20Leandro,%20" target="_blank" class="bt">Contate-me</a></button>
         </main>    
         <nav>
-            <img src="img/Perfil.png" alt="">
+            <img src="img/Perfil.png" alt="Foto-de-perfil" class="bg-perfil">
         </nav>
     </div>
     </section>
@@ -36,7 +36,7 @@
 
     <div id="sobre">
         <div class="space-60"></div>
-        <h2>Sobre mim</h2>
+        <h2 class="bg-l">Sobre mim</h2>
         <div class="space-60"></div>
 
         <div class="flex">
@@ -49,7 +49,7 @@
                     
                     <div class="hi">
                          <p class="p-small">Oi! Sou o Leandro Gomes, Desenvolvedor Front-End de São Paulo, Brasil. Atualmente estou estudando React, Javascript e Design. Tenho experiência razoável em Desenvolvimento Web.</p>
-                        <button><a href="https://api.whatsapp.com/send?phone=5511974562181&text=Oi%20Leandro,%20" target="_blank" class="bt">Contate-me</a></button>
+                        <div class="jus-bt"><button><a href="https://api.whatsapp.com/send?phone=5511974562181&text=Oi%20Leandro,%20" target="_blank" class="bt">Contate-me</a></button></div>
                     </div>
 
                      <div class="SOP">
@@ -99,7 +99,7 @@
             </nav> 
         </div>
         <div class="space-60"></div>
-        <div class="flex center-cross-around">
+        <span class="flex center-cross-around">
             
             <div>
                 <h3>100% </h3>
@@ -110,19 +110,19 @@
                 <p>Canecas de café</p>
             </div>
             <div>
-                <h3>300+</h3>
+                <h3><a href="https://www.instagram.com/le.d.oliveira/" class='bt' target="_blank">300+</a></h3>
                 <p>Amigos</p>
             </div>
             <div>
                 <h3>99</h3>
                 <p>Troféus ganho</p>
             </div>
-        </div>
+        </span>
     </div>
 
     <div id="servico">
         <div class="space-60"></div>
-        <h2>Serviços</h2> 
+        <h2 class="bg-l">Ocupação</h2> 
         <div class="space-30"></div>
         <div class="flex center-cross">
             <!-- Aqui começa o Card -->
@@ -160,7 +160,7 @@
         <!-- Aqui começa me encontre -->
         
         <div id="me-encontre">
-            <h2>Encontre-me</h2>    
+            <h2 class="bg-l">Encontre-me</h2>    
 
             <div class="grid-form">
                 <div class="flex ">
@@ -170,12 +170,20 @@
                         <div class="space-20"></div>
                         <p>Não gosta de formulários? Me manda um email!</p>
                         <div class="space-10"></div>
-                        <li>Email: leandrogomesdeoliveira2@gmail.com</li>
+                        <li>Email: <a href="https://mail.google.com/mail/u/?authuser=leandrogomesdeoliveira2@gmail.com" class="bt" target="_blank">leandrogomesdeoliveira2@gmail.com</a></li>
                         <div class="space-10"></div>
                         <li>Localização: Brasil, São Paulo.</li>
+                        <div class="social">
+                            <div class="space-30"></div>
+                            
+                            <a href="https://github.com/LeTXT" target="_blank"><img src="img/akar-icons_github-outline-fill.jpg" alt="GitHub" class=""></a>
+                            <a href="https://www.instagram.com/le.d.oliveira/" target="_blank"><img src="img/ant-design_instagram-outlined.jpg" alt="Instagram" class=""></a>
+                            <a href="https://www.linkedin.com/in/leandrogdo/" target="_blank"><img src="img/ant-design_linkedin-outlined.jpg" alt="LinkedIn" class=""></a>
+                        </div>
                     </nav>
                     <div class="space-m"></div>
                     <nav class="form">
+                        
                         <!-- Nome e Email -->
                         <div class="flex input-text">
                         <input type="text" placeholder="Seu nome" class="shadow-inset">
@@ -204,6 +212,9 @@
             <p>© 2021 Leandro Gomes</p>
         </footer>
     </div>
+    
     <script src="js/script.js"></script>
+
 </body>
+
 </html>
