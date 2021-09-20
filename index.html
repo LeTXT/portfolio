@@ -35,7 +35,7 @@
 </div>
 
     <div id="sobre">
-        <div class="space-60"></div>
+        <div class="space-60 bg-perfil-d"></div>
         <h2 class="bg-l">Sobre mim</h2>
         <div class="space-60"></div>
 
@@ -159,10 +159,10 @@
         <div class="space-10"></div>
         <!-- Aqui começa me encontre -->
         
-        <div id="me-encontre">
+        <div id="me-encontre" class="bg-main">
             <h2 class="bg-l">Encontre-me</h2>    
 
-            <div class="grid-form">
+            <div class="grid-form ">
                 <div class="flex ">
                     <nav class="get-in">
                         <div class="space-20"></div>
@@ -185,21 +185,28 @@
                     <nav class="form">
                         
                         <!-- Nome e Email -->
-                        <div class="flex input-text">
-                        <input type="text" placeholder="Seu nome" class="shadow-inset">
-                        <div class="space-10"></div>
-                        <input type="email" name="" id="" placeholder="Email" class="shadow-inset">
-                        </div>
-                        <!-- assunto -->
-                        <div class="input-text">
-                            <input type="text" name="about" id="assu" placeholder="Assunto" class="shadow-inset">
-                        </div>
-                        <div class="space-10"></div>
-                        <!-- textarea e button -->
-                        <div class="input-text">
-                            <div ><textarea name="form" id="" cols="30" rows="10" placeholder="Mande sua mensagem!" class="shadow-inset"></textarea></div>
-                            <button>Contate-me</button>
-                        </div>
+                        <form action="" method="POST">
+                            <div class="flex input-text">
+                                <label for="nome"></label>
+                            <input type="text" id="nome" placeholder="Seu nome" class="shadow-inset" name="usuario_nome">
+                            <div class="space-10"></div>
+                            <label for="email"></label>
+                            <input type="email" name="" id="email" placeholder="Email" class="shadow-inset" name="usuario_email">
+                            </div>
+                            <!-- assunto -->
+                            <div class="input-text">
+                                <label for="assu"></label>
+                                <input type="text" name="about" id="assu" placeholder="Assunto" class="shadow-inset" name="usuario_assunto">
+                            </div>
+                            <div class="space-10"></div>
+                            <!-- textarea e button -->
+                            <div class="input-text">
+                                <div >
+                                    <label for="msg"></label>
+                                    <textarea name="form" id="msg" cols="30" rows="10" placeholder="Mande sua mensagem!" class="shadow-inset" name="usuario_msg"></textarea></div>
+                                <button type="submit">Contate-me</button>
+                            </div>
+                        </form>
                     </nav>
                 </div>
             </div>
