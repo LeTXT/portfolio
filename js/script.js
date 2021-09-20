@@ -13,12 +13,12 @@ function textSlide() {
     setInterval(() => {
 
         if(i === string.length-1) {
-            console.log(string[i])
+            
             txt.innerHTML = ''
             txt.innerHTML = string[i]
             i = 0
         } else {
-            console.log(string[i])
+            
             txt.innerHTML = ''
             txt.innerHTML = string[i]
             i++
