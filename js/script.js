@@ -2,7 +2,6 @@
 let txt = document.querySelector('#slideText')
 
 
-
 const string = [ 'Aprendendo Design' ,'Amante de Games', 'Apreciador de Cinema' ,'Louco por Ciência' ,'Sou desenvolvedor Front-End']
 
 function textSlide() {
@@ -28,3 +27,5 @@ function textSlide() {
 }
 
 textSlide()
+
+
